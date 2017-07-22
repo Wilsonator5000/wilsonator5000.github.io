@@ -1,4 +1,4 @@
-(new-object System.Net.WebClient).DownloadFile('http://all4desktop.com/data_images/original/4202341-the-matrix-1080p-HD.jpg',"$Env:Temp\b.jpg");
+(new-object System.Net.WebClient).DownloadFile('http://all4desktop.com/data_images/original/4202341-the-matrix-1080p-HD.jpg',"C:\b.jpg");
 Add-Type @"
 using System;
 using System.Runtime.InteropServices;
@@ -42,4 +42,4 @@ key.Close();
 }
 }
 "@
-[Wallpaper.Setter]::SetWallpaper("$Env:Tempb.jpg" , 2 )
+[Wallpaper.Setter]::SetWallpaper("C:\b.jpg" , 2 )
