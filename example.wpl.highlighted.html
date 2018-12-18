@@ -1,0 +1,257 @@
+<html style="background-color: #1c1c1f;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="generator" content="Aspose.Words for .NET 17.1.0.0">
+    <title></title>
+
+    <style>
+    .code-block {
+        font-size: 12pt;
+        font-family: "SF Mono"
+    }
+    .code-block p {
+        margin-top:0pt;
+        margin-bottom:0pt;
+        line-height: 130%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="code-block">
+        <p><span style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment">///</span></p>
+        <p><span style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment">WILSON'S
+                PROGRAMMING LANGUAGE (WPL) - EXAMPLES</span></p>
+        <p><span style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment">CREATED
+                12/17/2018</span></p>
+        <p><span style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment">©
+                2018 WILSON GRAMER. UNDER THE MIT LICENSE.</span></p>
+        <p><span style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment">///</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#7a7896">---</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#c60090">from</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#b8653b">foo</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#c60090">import</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#49abe3">bar</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">,</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#25b379">baz</span><span style="font-family:SFMono-Regular; color:#7a7896">,</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#49abe3">etc</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#c60090">import</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#49abe3">github</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">(</span><span style="font-family:SFMono-Regular; color:#d69324">'mylib/mylib'</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">, ~&gt;</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#abac85">v1.0.0</span><span style="font-family:SFMono-Regular; color:#7a7896">)</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#c60090">as</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> mylib</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#c60090">from</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#49abe3">url</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">(</span><span style="font-family:SFMono-Regular; color:#d69324">'https://repo.com/myotherlib.git'</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">,</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+                branch </span><span style="font-family:SFMono-Regular; color:#d69324">'dev'</span><span style="font-family:SFMono-Regular; color:#7a7896">)</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#c60090">as</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> myotherlib-dev</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#7a7896">---</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;</span></p>
+        <p><span style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment">//*
+                Checks if the passed string matches a string version</span></p>
+        <p><span style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment">//*
+                of the passed number.</span></p>
+        <p><span style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment">//*
+            </span><span style="font-family:SFMono-BoldItalic; font-weight:bold; font-style:italic; color:#fedea7">@returns:</span><span
+                style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment"> `true` if they match,
+                `false` if they </span></p>
+        <p><span style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment">//*&nbsp;&nbsp;&nbsp;&nbsp;
+                don't.</span></p>
+        <p><span style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment">//*</span></p>
+        <p><span style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment">//*
+            </span><span style="font-family:SFMono-BoldItalic; font-weight:bold; font-style:italic; color:#fedea7">@example:</span><span
+                style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment"> ```</span></p>
+        <p><span style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment">//*
+                does('3', match 3) // true</span></p>
+        <p><span style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment">//*
+                does('56', match 3) // false</span></p>
+        <p><span style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment">//*
+                does('qwerty', match 3) // false</span></p>
+        <p><span style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment">//*
+                ```</span></p>
+        <p><span style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment">//*</span></p>
+        <p><span style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment">//*
+            </span><span style="font-family:SFMono-BoldItalic; font-weight:bold; font-style:italic; color:#fedea7">@author:</span><span
+                style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment"> Wilson Gramer</span></p>
+        <p><span style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment">//*
+            </span><span style="font-family:SFMono-BoldItalic; font-weight:bold; font-style:italic; color:#fedea7">@see-also:</span><span
+                style="font-family:SFMono-RegularItalic; font-style:italic;" class="comment"> my-inline-function</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#c60090">function</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#49abe3">does</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">(</span><span style="font-family:SFMono-Regular; color:#aaa7d2">_
+            </span><span style="font-family:SFMono-Regular; color:#25b379">string</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+                str</span><span style="font-family:SFMono-Regular; color:#7a7896">,</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#7a7896">(</span><span style="font-family:SFMono-Regular; color:#aaa7d2">match</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">)</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#25b379">number</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+                x</span><span style="font-family:SFMono-Regular; color:#7a7896">)</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#c60090">returns</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#25b379">bool</span><span style="font-family:SFMono-Regular; color:#7a7896">:</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#7a7896">{</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#ffffff">&nbsp;&nbsp;&nbsp;
+            </span><span style="font-family:SFMono-Regular; color:#c60090">return</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#7a7896">(</span><span style="font-family:SFMono-Regular; color:#c60090">try?</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#25b379">string</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">(</span><span style="font-family:SFMono-Regular; color:#aaa7d2">x</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">))</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#c60090">is</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+                str</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#7a7896">}</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#c60090">const</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> is-match </span><span style="font-family:SFMono-Regular; color:#7a7896">=</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#49abe3">does</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">(</span><span style="font-family:SFMono-Regular; color:#d69324">'42'</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">,</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+                match </span><span style="font-family:SFMono-Regular; color:#abac85">7</span><span style="font-family:SFMono-Regular; color:#7a7896">*</span><span
+                style="font-family:SFMono-Regular; color:#abac85">6</span><span style="font-family:SFMono-Regular; color:#7a7896">)</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#49abe3">print</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">(</span><span style="font-family:SFMono-Regular; color:#aaa7d2">is-match</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">)</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#7a7896">---</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#c60090">function</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#49abe3">my-inline-function</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">(</span><span style="font-family:SFMono-Regular; color:#25b379">int</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> arg1</span><span style="font-family:SFMono-Regular; color:#7a7896">)</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#c60090">returns</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#25b379">string</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">: .</span><span style="font-family:SFMono-Regular; color:#25b379">init</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">(</span><span style="font-family:SFMono-Regular; color:#aaa7d2">arg1</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">) +</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#d69324">' is the best number!'</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#7a7896">---</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#c60090">from</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#b8653b">colors</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#c60090">import</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#25b379">color</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#c60090">class</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#25b379">Person</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#7a7896">{</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;&nbsp;&nbsp;
+            </span><span style="font-family:SFMono-Regular; color:#25b379">string</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+                name</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;&nbsp;&nbsp;
+            </span><span style="font-family:SFMono-Regular; color:#25b379">int</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+                age</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;&nbsp;&nbsp;
+            </span><span style="font-family:SFMono-Regular; color:#25b379">color</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+                hair-color</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;&nbsp;&nbsp;
+            </span><span style="font-family:SFMono-Regular; color:#c60090">init</span><span style="font-family:SFMono-Regular; color:#7a7896">(</span><span
+                style="font-family:SFMono-Regular; color:#25b379">string</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+                name</span><span style="font-family:SFMono-Regular; color:#7a7896">,</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#25b379">int</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+                age</span><span style="font-family:SFMono-Regular; color:#7a7896">,</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#7a7896">(</span><span style="font-family:SFMono-Regular; color:#aaa7d2">hair</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">)</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#25b379">color</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+                hair-color</span><span style="font-family:SFMono-Regular; color:#7a7896">): {</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span><span style="font-family:SFMono-Regular; color:#c60090">self</span><span style="font-family:SFMono-Regular; color:#7a7896">.</span><span
+                style="font-family:SFMono-Regular; color:#5860e3">name</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#7a7896">=</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+                name </span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span><span style="font-family:SFMono-Regular; color:#c60090">self</span><span style="font-family:SFMono-Regular; color:#7a7896">.</span><span
+                style="font-family:SFMono-Regular; color:#5860e3">age</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#7a7896">=</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+                age</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span><span style="font-family:SFMono-Regular; color:#c60090">self</span><span style="font-family:SFMono-Regular; color:#7a7896">.</span><span
+                style="font-family:SFMono-Regular; color:#5860e3">hair-color</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#7a7896">=</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+                hair-color</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;&nbsp;&nbsp;
+                }</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;&nbsp;&nbsp;
+            </span><span style="font-family:SFMono-Regular; color:#25b379">bool</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+                has-black-hair</span><span style="font-family:SFMono-Regular; color:#7a7896">:</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#c60090">self</span><span style="font-family:SFMono-Regular; color:#7a7896">.</span><span
+                style="font-family:SFMono-Regular; color:#5860e3">hair-color</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#c60090">is</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#7a7896">.</span><span style="font-family:SFMono-Regular; color:#5860e3">black</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;&nbsp;&nbsp;
+            </span><span style="font-family:SFMono-Regular; color:#c60090">function</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#49abe3">greeting</span><span style="font-family:SFMono-Regular; color:#7a7896">()</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#c60090">returns</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#25b379">string</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">: {</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span><span style="font-family:SFMono-Regular; color:#c60090">if</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#c60090">self</span><span style="font-family:SFMono-Regular; color:#7a7896">.</span><span
+                style="font-family:SFMono-Regular; color:#5860e3">age</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#7a7896">&gt;</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#abac85">12</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#7a7896">{</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span><span style="font-family:SFMono-Regular; color:#c60090">return</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#d69324">'Hi there, </span><span style="font-family:SFMono-Regular; color:#7a7896">{</span><span
+                style="font-family:SFMono-Regular; color:#c60090">self</span><span style="font-family:SFMono-Regular; color:#7a7896">.</span><span
+                style="font-family:SFMono-Regular; color:#5860e3">name</span><span style="font-family:SFMono-Regular; color:#7a7896">}</span><span
+                style="font-family:SFMono-Regular; color:#d69324">!' </span><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span><span style="font-family:SFMono-Regular; color:#7a7896">}</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#c60090">else</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#c60090">if</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#c60090">it</span><span style="font-family:SFMono-Regular; color:#7a7896">.</span><span
+                style="font-family:SFMono-Regular; color:#49abe3">is</span><span style="font-family:SFMono-Regular; color:#7a7896">(</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2">between </span><span style="font-family:SFMono-Regular; color:#abac85">3</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">..&lt;</span><span style="font-family:SFMono-Regular; color:#abac85">12</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">)</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#7a7896">{</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span><span style="font-family:SFMono-Regular; color:#c60090">return</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#d69324">'Hey, kiddo!'</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span><span style="font-family:SFMono-Regular; color:#7a7896">}</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#c60090">else</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#7a7896">{</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span><span style="font-family:SFMono-Regular; color:#c60090">return</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#d69324">'Hello, little guy!'</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span><span style="font-family:SFMono-Regular; color:#7a7896"> }</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#7a7896">&nbsp;&nbsp;&nbsp;
+                }</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#7a7896">}</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#c60090">let</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> person </span><span style="font-family:SFMono-Regular; color:#7a7896">=</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#25b379">Person</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">(</span><span style="font-family:SFMono-Regular; color:#aaa7d2">name
+            </span><span style="font-family:SFMono-Regular; color:#7a7896">=</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+            </span><span style="font-family:SFMono-Regular; color:#d69324">'Bob'</span><span style="font-family:SFMono-Regular; color:#7a7896">,</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> age </span><span style="font-family:SFMono-Regular; color:#7a7896">=</span><span
+                style="font-family:SFMono-Regular; color:#aaa7d2"> </span><span style="font-family:SFMono-Regular; color:#abac85">25</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">,</span><span style="font-family:SFMono-Regular; color:#aaa7d2">
+                hair </span><span style="font-family:SFMono-Regular; color:#abac85">#654321</span><span style="font-family:SFMono-Regular; color:#7a7896">)</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#49abe3">print</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">(</span><span style="font-family:SFMono-Regular; color:#5860e3">person</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">.</span><span style="font-family:SFMono-Regular; color:#49abe3">greeting</span><span
+                style="font-family:SFMono-Regular; color:#7a7896">())</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;</span></p>
+        <p><span style="font-family:SFMono-Regular; color:#aaa7d2">&nbsp;</span></p>
+    </div>
+</body>
+
+</html>
